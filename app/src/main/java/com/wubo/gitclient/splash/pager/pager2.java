@@ -65,7 +65,7 @@ public class Pager2 extends FrameLayout {
         postDelayed(new Runnable() {
             @Override
             public void run() {
-                mBubble2.setVisibility(VISIBLE);
+                mBubble3.setVisibility(VISIBLE);
                 YoYo.with(Techniques.FadeInLeft).duration(500).playOn(mBubble3);
             }
         },1050);
