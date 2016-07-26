@@ -11,18 +11,18 @@ import com.wubo.gitclient.R;
  * Created by WuBo_PC on 2016/7/26.
  */
 
-public class pager1 extends FrameLayout {
-    public pager1(Context context) {
+public class Pager1 extends FrameLayout {
+    public Pager1(Context context) {
         super(context);
         initView();
     }
 
-    public pager1(Context context, AttributeSet attrs) {
+    public Pager1(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView();
     }
 
-    public pager1(Context context, AttributeSet attrs, int defStyleAttr) {
+    public Pager1(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView();
     }

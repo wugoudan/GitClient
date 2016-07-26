@@ -5,9 +5,9 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.wubo.gitclient.splash.pager.pager0;
-import com.wubo.gitclient.splash.pager.pager1;
-import com.wubo.gitclient.splash.pager.pager2;
+import com.wubo.gitclient.splash.pager.Pager0;
+import com.wubo.gitclient.splash.pager.Pager1;
+import com.wubo.gitclient.splash.pager.Pager2;
 
 /**
  * Created by WuBo_PC on 2016/7/26.
@@ -18,9 +18,9 @@ public class SplashPagerAdapter extends PagerAdapter {
 
     public SplashPagerAdapter(Context context) {
         this.views = new View[]{
-                new pager0(context),
-                new pager1(context),
-                new pager2(context)};
+                new Pager0(context),
+                new Pager1(context),
+                new Pager2(context)};
     }
 
     @Override
@@ -43,5 +43,9 @@ public class SplashPagerAdapter extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View)object);
+    }
+
+    public View getPager(int position) {
+        return views[position];
     }
 }
