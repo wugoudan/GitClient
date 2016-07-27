@@ -80,21 +80,25 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 //...
             }
+            mDrawerLayout.closeDrawer(Gravity.LEFT);
             //此处返回true代表点击Item时选中Item项
             return true;
         }
     };
 
-
-    @Override
-    /**点击返回键时，是打开/关闭抽屉菜单*/
-    public void onBackPressed() {
-//        super.onBackPressed();
+    private void drawerLayoutIsOpen(){
         if(mDrawerLayout.isDrawerOpen(Gravity.LEFT)){
             mDrawerLayout.closeDrawer(Gravity.LEFT);
         }else{
             mDrawerLayout.openDrawer(Gravity.LEFT);
         }
+    }
+
+    @Override
+    /**点击返回键时，是打开/关闭抽屉菜单*/
+    public void onBackPressed() {
+//        super.onBackPressed();
+        drawerLayoutIsOpen();
     }
 
 

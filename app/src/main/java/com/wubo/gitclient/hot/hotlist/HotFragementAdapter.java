@@ -1,4 +1,4 @@
-package com.wubo.gitclient.hot;
+package com.wubo.gitclient.hot.hotlist;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

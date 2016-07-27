@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.wubo.gitclient.R;
+import com.wubo.gitclient.hot.hotlist.HotFragementAdapter;
+import com.wubo.gitclient.hot.hotlist.HotListFrament;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
