@@ -66,14 +66,17 @@ public class SplashPagerFragment extends Fragment {
             if(position == 0){
                 int bgColor = (int) evaluator.evaluate(positionOffset, color2, color0);
                 mContent.setBackgroundColor(bgColor);
+                SplashActivity.setButtonBarColor(bgColor);
             }
             if(position == 1){
                 int bgColor = (int) evaluator.evaluate(positionOffset, color0, color1);
                 mContent.setBackgroundColor(bgColor);
+                SplashActivity.setButtonBarColor(bgColor);
             }
             if(position == 2){
                 int bgColor = (int) evaluator.evaluate(positionOffset, color1, color2);
                 mContent.setBackgroundColor(bgColor);
+                SplashActivity.setButtonBarColor(bgColor);
             }
         }
 

@@ -37,7 +37,6 @@ public class Pager2 extends FrameLayout {
         initView();
     }
 
-
     private void initView() {
         LayoutInflater.from(getContext()).inflate(R.layout.content_pager_2, this);
         ButterKnife.bind(this);
