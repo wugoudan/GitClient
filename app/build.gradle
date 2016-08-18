@@ -10,7 +10,6 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -51,6 +50,18 @@ dependencies {
     //网络框架
     compile 'com.squareup.retrofit2:retrofit:2.1.0' //retorfit
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'   //Retorfit内部Gson解析
+
+    // 一个小众库，用于给滑动组件添加上拉加载功能
+    compile 'com.vinaysshenoy:mugen:1.0.2'
+
+    //图片加载
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.j256.ormlite:ormlite-core:5.0'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
 
     testCompile 'junit:junit:4.12'
 }

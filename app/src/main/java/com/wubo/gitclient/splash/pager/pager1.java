@@ -7,27 +7,29 @@ import android.widget.FrameLayout;
 
 import com.wubo.gitclient.R;
 
-/**
- * Created by WuBo_PC on 2016/7/26.
- */
 
+/**
+ * Created by wulog on 2016/8/18.
+ */
 public class Pager1 extends FrameLayout {
+
+
     public Pager1(Context context) {
-        super(context);
-        initView();
+        this(context, null);
     }
 
     public Pager1(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        initView();
+        this(context, attrs, 0);
     }
 
     public Pager1(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        initView();
+        init();
     }
 
-    private void initView(){
-        LayoutInflater.from(getContext()).inflate(R.layout.content_pager_1,this);
+    private void init() {
+        LayoutInflater.from(getContext()).inflate(R.layout.content_pager_1, this, true);
     }
+
+
 }
